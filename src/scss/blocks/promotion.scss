@@ -1,0 +1,77 @@
+.promotion {
+  margin-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $lg) {
+    padding-left: 128px;
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+.promotion__wrap {
+  margin-bottom: 64px;
+
+  @media (min-width: $lg) {
+    width: 586px;
+    margin-top: 20px;
+  }
+}
+
+.promotion__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-title;
+
+  @media (min-width: $lg) {
+    margin-right: auto;
+    font-size: 40px;
+  }
+}
+
+.promotion__button {
+  @include button;
+  width: 335px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: $white;
+  background-color: $blue-common;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 16px;
+
+  &:hover {
+    background-color: $hover-button;
+  }
+
+  @media (min-width: $lg) {
+    width: 354px;
+  }
+}
+
+.promotion__text {
+  margin: 0;
+  margin-bottom: 16px;
+
+  &--last {
+    margin-bottom: 0;
+  }
+
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-text;
+
+  @media (min-width: $lg) {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,357 @@
+.form__wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 46px;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+
+  font-family: Ubuntu;
+
+  @media (min-width: $lg) {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+
+.form__title {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: $color-title;
+
+  @media (min-width: $lg) {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+
+.form__wrapper-input {
+  @media (min-width: $lg) {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+
+    .form__wrapper-label {
+      width: 48%;
+
+      &:nth-child(odd) {
+        margin-right: 32px;
+      }
+    }
+  }
+}
+
+.form__label {
+  display: block;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  color: $color-text;
+
+  @media (min-width: $lg) {
+    margin-top: 24px;
+    font-size: 16px;
+  }
+
+  &--dropdown {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid $border-default;
+
+      top: 52px;
+      right: 16px;
+    }
+  }
+
+  &--focus {
+    &::after {
+      border-color: $blue-common;
+    }
+  }
+
+  &--success {
+    &::after {
+      border: none;
+      width: 24px;
+      height: 24px;
+      top: 58px;
+      background-color: $green-common;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 63px;
+      right: 21px;
+      width: 12px;
+      height: 8px;
+
+      border-left: 1px solid $white;
+      border-bottom: 1px solid $white;
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      z-index: 2;
+    }
+  }
+
+  &--checkbox {
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-left: 48px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $color-text;
+
+    @media (min-width: $lg) {
+      font-size: 16px;
+    }
+  }
+
+  &--error {
+    &::after {
+      position: absolute;
+      content: "";
+      border: none;
+      width: 24px;
+      height: 24px;
+      top: 58px;
+      right: 20px;
+      border-radius: 50%;
+      background-color: $red-commom;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 12px;
+      height: 12px;
+      top: 64px;
+      right: 26px;
+      background-image: url(../img/icons/cross.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 300;
+    }
+  }
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  border: 1px solid $border-default;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 10px;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-title;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-size: 14px;
+    color: $color-placeholder;
+  }
+
+  &:hover {
+    border-color: $blue-common;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $blue-common;
+  }
+
+  &--review {
+    margin-top: 24px;
+    padding-left: 10px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 22px;
+      color: $color-title;
+      text-align: center;
+    }
+  }
+
+  &--content {
+    width: 280px;
+
+    @media (min-width: $lg) {
+      width: 300px;
+      margin-left: 32px;
+      margin-right: 32px;
+      margin-top: 64px;
+    }
+  }
+
+  &--complaints {
+    width: 280px;
+
+    @media (min-width: $lg) {
+      width: 200px;
+      margin-right: 32px;
+      margin-top: 64px;
+    }
+  }
+
+  &--other {
+    width: 165px;
+
+    @media (min-width: $lg) {
+      width: 170px;
+      margin-top: 64px;
+    }
+  }
+
+  &--textarea {
+    width: 335px;
+    height: 130px;
+    resize: none;
+
+    @media (min-width: $lg) {
+      width: 100%;
+    }
+  }
+
+  &--error {
+    border-color: $red-commom;
+  }
+}
+
+.form__dropdown-wrapper {
+  position: relative;
+}
+
+.form__dropdown-svg {
+  position: absolute;
+  width: 18px;
+  height: 15px;
+  top: 63px;
+  right: 24px;
+  stroke: #eaeaea;
+  transform: rotate(-180deg);
+}
+
+.form__dropdown-list {
+  @include list-reset();
+  background-color: $white;
+  padding-top: 13px;
+
+  filter: drop-shadow(0 0 24px rgba(35, 35, 35, 0.05));
+  display: none;
+}
+
+.form__dropdown-open {
+  display: block;
+}
+
+.form__dropdown-item {
+  color: $color-title;
+  font-size: 16px;
+  padding-left: 24px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #eaeaea;
+  }
+}
+
+.form__dropdown-success {
+  border-color: $green-common;
+}
+
+.form__dropdown-wrap {
+  position: absolute;
+  width: 335px;
+
+  @media (min-width: $lg) {
+    width: 510px;
+  }
+}
+
+.form__button {
+  @include button;
+  width: 285px;
+  margin-top: 40px;
+
+  color: $white;
+  background-color: $blue-common;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-size: 14px;
+  line-height: 22px;
+
+  @media (min-width: $lg) {
+    margin-top: 64px;
+  }
+
+  &:hover {
+    background-color: $hover-button;
+  }
+
+  &--send {
+    width: 335px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: $lg) {
+      margin-right: 0;
+      margin-top: 0;
+    }
+  }
+}
+
+.form__wrap-check {
+  margin-top: 40px;
+
+  @media (min-width: $lg) {
+    display: flex;
+    align-items: center;
+    margin-top: 64px;
+  }
+}
+
+.form__input--checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 9px;
+  width: 15px;
+  height: 9px;
+  border-left: 1px solid $blue-common;
+  border-bottom: 1px solid $blue-common;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.form__input--checkbox + label::after {
+  position: absolute;
+  content: "";
+  width: 32px;
+  height: 32px;
+  border: 1px solid $border-default;
+  top: 0;
+  left: 0;
+}
+
+.form__input--checkbox:checked + label::after {
+  border-color: $blue-common;
+}

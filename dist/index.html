@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестовая задача от компании Dream Team</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <div class="overlay"></div>
+  <main>
+    <div class="banner wrap">
+      <img class="banner__img" src="img/Banner.png" alt="banner">
+    </div>
+    <section class="promotion wrap">
+
+      <h1 class="promotion__title">Walking in Old Tallinn</h1>
+      <button class="promotion__button">Feedback</button>
+      <div class="promotion__wrap">
+        <p class="promotion__text">Welcome to Old Tallinn, the heart of the Estonian capital!
+          The history of the settlement once began from here, and today it is one of the best preserved medieval
+          cities in Europe.
+        </p>
+        <p class="promotion__text">I will take you through the streets and doorways and show you where they traded,
+          what they ate, what they sued about and what our Estonian ancestors aspired to.
+        </p>
+        <p class="promotion__text">
+          You will visit the oldest pharmacy, get acquainted with the royal privileges, see firsthand a real
+          "gingerbread" house, look into an old tavern, walk along the widest and longest streets of the city and even
+          find out that Tallinn is a lame city!
+        </p>
+        <p class="promotion__text promotion__text--last">
+          And you will also find beautiful and interesting souvenirs, of course!
+        </p>
+      </div>
+
+    </section>
+
+    <div class="slider slider__promotion wrap">
+      <div class="slider__list slider__list--promotion">
+        <div class="slider__item">
+          <img src="img/Rectangle 2.png" alt="2" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="img/Rectangle 3.png" alt="3" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="img/Rectangle 4.png" alt="4" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="img/Rectangle 5.png" alt="5" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="img/Rectangle 2.png" alt="2" class="slider__img">
+        </div>
+        <div class="slider__item">
+          <img src="img/Rectangle 3.png" alt="3" class="slider__img">
+        </div>
+      </div>
+      <div class="slider__button-wrap">
+        <button class="slider__button slider__button--prev">
+          <svg class="slider__svg slider__svg--prev">
+            <use xlink:href="img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
+        <button class="slider__button slider__button--next">
+          <svg class="slider__svg slider__svg--next">
+            <use xlink:href="img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <section class="tours tours__slider slider wrap">
+      <h2 class="tours__title">Other tours</h2>
+      <div class="slider__list slider__list--tours">
+        <div class="slider__item slider__item--tours">
+          <img src="img/Photo1.png" alt="2" class="slider__img">
+          <svg class="slider__favorites">
+            <use xlink:href="img/icons/icons.svg#heart"></use>
+          </svg>
+          <h3 class="tours__caption">St. Isaac's Cathedral in St. Petersburg</h3>
+          <p class="tours__text">One of the highest domed structures in the world.</p>
+        </div>
+        <div class="slider__item slider__item--tours">
+          <img src="img/Photo2.png" alt="3" class="slider__img">
+          <svg class="slider__favorites">
+            <use xlink:href="img/icons/icons.svg#heart"></use>
+          </svg>
+          <h3 class="tours__caption">The Bridge of Peace, Tbilisi</h3>
+          <p class="tours__text">Arc-shaped pedestrian bridge made of glass and steel</p>
+        </div>
+        <div class="slider__item slider__item--tours slider__item--last">
+          <img src="img/Photo3.png" alt="4" class="slider__img">
+          <svg class="slider__favorites">
+            <use xlink:href="img/icons/icons.svg#heart"></use>
+          </svg>
+          <h3 class="tours__caption">El Caminito del Rey, Argentina</h3>
+          <p class="tours__text">Tango, Open-air Museum, Painting, Art and History</p>
+        </div>
+      </div>
+      <div class="slider__button-wrap tours--button-wrap">
+        <button class="slider__button slider__button--prev">
+          <svg class="slider__svg slider__svg--prev">
+            <use xlink:href="img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
+        <button class="slider__button slider__button--next">
+          <svg class="slider__svg slider__svg--next">
+            <use xlink:href="img/icons/icons.svg#arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <section class="popup form">
+    <div class="popup__wrap">
+      <button class="popup__close">
+        <svg class="popup__svg">
+          <use xlink:href="img/icons/icons.svg#cross"></use>
+        </svg>
+      </button>
+
+      <form class="form__wrap" action="" method="post">
+        <h2 class="form__title">Feedback</h2>
+        <div class="form__wrapper-input">
+          <div class="form__wrapper-label">
+            <label for="default" class="form__label">Default</label>
+            <input type="text" name="default" id="default" class="form__input form__input--required"
+              placeholder="Placeholder">
+          </div>
+
+          <div class="form__wrapper-label">
+            <label for="email" class="form__label">Email address</label>
+            <input type="email" name="email" id="email" class="form__input form__input--required"
+              placeholder="Placeholder">
+          </div>
+
+          <div class="form__wrapper-label">
+            <label for="phone" class="form__label">Your phone</label>
+            <input type="tel" id="phone" name="phone" class="form__input form__input--required"
+              placeholder="Placeholder">
+          </div>
+
+          <div class="form__wrapper-label">
+            <div class="form__dropdown-wrapper">
+              <label for="trip" class="form__label form__label--dropdown">Сhoose a trip</label>
+              <input type="text" id="trip" name="dropdown" value="" class="form__input form__input--dropdown"
+                placeholder="Сhoose">
+              <svg class="form__dropdown-svg">
+                <use xlink:href="img/icons/icons.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="form__dropdown-wrap">
+              <ul class="form__dropdown-list">
+                <li class="form__dropdown-item">Walking in Old Tallinn</li>
+                <li class="form__dropdown-item">St. Isaac's Cathedral</li>
+                <li class="form__dropdown-item">The Bridge of Peace</li>
+                <li class="form__dropdown-item">El Caminito del Rey</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <button class="form__button">Reviews and suggestions</button>
+
+          <input type="text" id="content" name="content" class="form__input form__input--review form__input--content"
+            placeholder="Question about content">
+          <input type="text" id="complaints" name="complaints"
+            class="form__input form__input--review form__input--complaints" placeholder="Complaints">
+          <input type="text" id="other" name="other" class="form__input form__input--review form__input--other"
+            placeholder="Other">
+        </div>
+        <label for="text" class="form__label">Describe your question</label>
+        <textarea id="text" name="text" class="form__input form__input--textarea" placeholder="Placeholder"></textarea>
+
+        <div class="form__wrap-check">
+          <input class="visually-hidden form__input form__input--checkbox" type="radio" name="agreement" value="1"
+            id="agreement" required>
+          <label class="form__label form__label--checkbox" for="agreement">Даю согласие на обработку</label>
+
+          <button type="submit" class="form__button form__button--send">Send</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+
+  <script src=" js/app.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    var sliderPromotion = document.querySelector('.slider__promotion');
+    var buttonNextPromotion = sliderPromotion.querySelector('.slider__button--next');
+    var buttonPrevPromotion = sliderPromotion.querySelector('.slider__button--prev');
+    $('.slider__list--promotion').slick({
+      slidesToScroll: 1,
+      initialSlide: 0,
+      variableWidth: true,
+      nextArrow: buttonNextPromotion,
+      prevArrow: buttonPrevPromotion,
+    });
+
+    var sliderTours = document.querySelector('.tours__slider');
+    if (sliderTours.querySelector('.slider__button--next') !== null) {
+      var buttonNextTours = sliderTours.querySelector('.slider__button--next');
+      var buttonPrevTours = sliderTours.querySelector('.slider__button--prev');
+    }
+
+    $('.slider__list--tours').slick({
+      nextArrow: buttonNextTours,
+      prevArrow: buttonPrevTours,
+      responsive: [
+        {
+          breakpoint: 480,
+          settings: {
+            infinite: true,
+            slidesToShow: 1,
+            initialSlide: 0,
+            variableWidth: true
+          }
+        },
+        {
+          breakpoint: 920,
+          settings: {
+            infinite: true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            swipeToSlide: true
+          }
+        },
+        {
+          breakpoint: 9999,
+          arrows: false,
+          settings: "unslick"
+        },
+      ]
+    });
+
+  </script>
+  <script>
+    if (document.querySelector('.popup') !== null) {
+      const popup = document.querySelector('.popup');
+      const buttonClose = popup.querySelector('.popup__close');
+      const overlay = document.querySelector('.overlay');
+      const buttonOpen = document.querySelector('.promotion__button');
+
+      buttonClose.addEventListener('click', function () {
+        popup.classList.remove('popup__show');
+        overlay.classList.remove('overlay--show');
+      });
+
+      buttonOpen.addEventListener('click', function () {
+        popup.classList.add('popup__show');
+        overlay.classList.add('overlay--show');
+      });
+
+      const inputDropdown = popup.querySelector('.form__input--dropdown');
+      const labelDropdown = popup.querySelector('.form__label--dropdown');
+      const svgDropdown = popup.querySelector('.form__dropdown-svg');
+
+      inputDropdown.addEventListener('click', function () {
+        popup.querySelector('.form__dropdown-list').classList.toggle('form__dropdown-open');
+        inputDropdown.style.borderColor = "#659dbd";
+        labelDropdown.classList.add('form__label--focus');
+
+        if (inputDropdown.value === '') {
+          svgDropdown.style.cssText = "transform: rotate(0deg);stroke:#659dbd; top:61px;"
+        }
+      });
+
+      const listDropdown = popup.querySelectorAll('.form__dropdown-item');
+      listDropdown.forEach((item) => {
+        item.addEventListener('click', function () {
+          inputDropdown.value = this.innerText;
+          popup.querySelector('.form__dropdown-list').classList.toggle('form__dropdown-open');
+          inputDropdown.style.borderColor = "";
+          inputDropdown.classList.add('form__dropdown-success');
+          labelDropdown.classList.remove('form__label--focus');
+          labelDropdown.classList.add('form__label--success');
+          svgDropdown.style.display = 'none';
+        });
+      });
+
+      const buttonSubmit = popup.querySelector('.form__button--send');
+      buttonSubmit.addEventListener('click', function (evt) {
+        evt.preventDefault();
+
+        const allInput = popup.querySelectorAll('input');
+        const allLabel = popup.querySelectorAll('label');
+
+        allInput.forEach((input) => {
+          if (input.classList.contains('form__input--error')) {
+            input.classList.remove('form__input--error');
+          }
+        });
+        allLabel.forEach((label) => {
+          if (label.classList.contains('form__label--error')) {
+            label.classList.remove('form__label--error');
+          }
+        });
+
+        const inputRequired = popup.querySelectorAll('.form__input--required');
+        const inputError = [];
+        Array.from(inputRequired).map((item) => {
+          if (item.value === '') {
+            inputError.push(item);
+          }
+        });
+
+        if (inputError.length > 0) {
+          inputError.forEach((input) => {
+            input.classList.add('form__input--error');
+            popup.querySelector(`label[for="${input.id}"]`).classList.add('form__label--error');
+
+            input.addEventListener('input', function () {
+              input.classList.remove('form__input--error');
+              popup.querySelector(`label[for="${input.id}"]`).classList.remove('form__label--error');
+            });
+          });
+        } else {
+          popup.querySelectorAll('input').forEach((input) => {
+            input.value = '';
+          });
+          popup.querySelector('textarea').value = '';
+          if (inputDropdown.classList.contains('form__dropdown-success')) {
+            inputDropdown.classList.remove('form__dropdown-success');
+            labelDropdown.classList.remove('form__label--success');
+            svgDropdown.style.display = 'block';
+            svgDropdown.style.cssText = "transform: rotate(180deg);stroke:#eaeaea; top:61px;"
+          }
+        }
+
+      });
+    }
+  </script>
+</body>
+
+</html>

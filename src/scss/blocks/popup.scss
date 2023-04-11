@@ -1,0 +1,70 @@
+.popup {
+  display: none;
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  background-color: $white;
+}
+
+.popup__wrap {
+  position: relative;
+  width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $lg) {
+    width: 1184px;
+  }
+}
+
+.popup__close {
+  @include button();
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $border-default;
+  background-color: $white;
+
+  &:hover {
+    background-color: $blue-common;
+
+    svg {
+      stroke: $white;
+    }
+  }
+}
+
+.popup__svg {
+  position: absolute;
+  display: block;
+  stroke: $border-default;
+  width: 14px;
+  height: 14px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.popup__show {
+  display: block;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 35, 35, 0.4);
+  z-index: 100;
+  display: none;
+}
+
+.overlay--show {
+  display: block;
+}
