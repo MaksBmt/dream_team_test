@@ -10,7 +10,8 @@ import groupCssMediaQueries from 'gulp-group-css-media-queries'; // Групир
 const sass = gulpSass(dartSass);
 
 export const scss = () => {
-	return app.gulp.src(app.path.src.scss, { sourcemaps: app.isDev })
+	// return app.gulp.src(app.path.src.scss, { sourcemaps: app.isDev })
+	return app.gulp.src(app.path.src.scss, { sourcemaps: true })
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
 				title: "SCSS",
@@ -36,19 +37,19 @@ export const scss = () => {
 				})
 			)
 		)
-		.pipe(
-			app.plugins.if(
-				app.isBuild,
-				webpcss(
-					{
-						webpClass: ".webp",
-						noWebpClass: ".no-webp"
-					}
-				)
-			)
-		)
+		// .pipe(
+		// 	app.plugins.if(
+		// 		app.isBuild,
+		// 		webpcss(
+		// 			{
+		// 				webpClass: ".webp",
+		// 				noWebpClass: ".no-webp"
+		// 			}
+		// 		)
+		// 	)
+		// )
 		// Раскомментировать если нужен не сжатый дубль файла стилей
-		.pipe(app.gulp.dest(app.path.build.css))
+		// .pipe(app.gulp.dest(app.path.build.css))
 		.pipe(
 			app.plugins.if(
 				app.isBuild,
